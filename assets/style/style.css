@@ -1,0 +1,108 @@
+/* Reset */
+@import url(/assets/style/reset.css);
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+:root{
+    --g-color : #f2b202;
+    --hv-color : #f5c43c;
+    --bg-color:#404142;
+}
+body,span{
+    color: white;
+    background: var(--bg-color);
+    font-family: 'Arvo', serif;
+}
+.container{
+    background: black;
+    margin: 0 auto;
+    max-width: 80%;
+}
+main{padding: 15px;}
+figure{
+    width: 100px;
+    margin: 0 auto 20px auto;
+}
+nav{
+    background: var(--g-color);
+}
+p{
+    margin: 5px;
+    font-size: 1em;
+}
+li,footer{
+    padding: 20px;
+    text-align: center;
+}
+li:hover{
+    color: black;
+    background: var(--hv-color);
+    cursor: pointer;
+}
+article{
+    margin: 20px 0;
+}
+aside{
+    display: none;
+    background: var(--hv-color);
+    color: black;
+    padding: 15px;
+}
+img{
+    max-width: 100%;
+}
+h1,h2{
+    color: var(--g-color);
+}
+h1{
+    font-size: 1.5em;
+}
+h2{
+    font-size: 1.2em;
+}
+hr,li{
+    background: var(--g-color);
+}
+hr{
+    height: 2px; 
+    border: 0;
+}
+.frame {
+    max-width: 100%;
+    margin: 0 auto;
+}
+iframe{
+    width: 100%;
+}
+small{
+    color: grey;
+    display: block;
+    margin: 10px 0;
+}
+@media (min-width: 767px) {
+    .frame{
+        max-width: 50%;
+    }
+    aside{
+        display: block;
+    }
+}
+@media (min-width: 992px) {
+    main{
+        width: 70%;
+    }
+    aside{
+        width: 30%;
+    }
+    .frame{
+        max-width: 100%;
+    }
+    .container-main{
+        display: flex;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+    }
+}
